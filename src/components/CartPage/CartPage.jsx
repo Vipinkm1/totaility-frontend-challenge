@@ -9,7 +9,6 @@ const {cartItems, removeFromCart}= useCart()
 const [quantities, setQuantities] = useState(
   cartItems.map(()=> 1)
 )
-
 const navigate =  useNavigate()
 
 //  total cost state
@@ -22,8 +21,6 @@ useEffect(() => {
   }, 0);
   setTotalCost(newTotalCost);
 }, [cartItems, quantities]);
-
-
 const productlength = (productDescription) => {
   return productDescription.length > 20 ? productDescription.slice(0, 20) + "..." : productDescription
 }
@@ -34,7 +31,6 @@ const handleIncrement = (index) => {
     return newQuantities;
   });
 };
-
 const handleDecrement = (index) => {
   setQuantities((prevQuantities) => {
     const newQuantities = [...prevQuantities];
