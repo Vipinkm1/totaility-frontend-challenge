@@ -195,8 +195,6 @@ span{
    display: flex;
    align-items: center;
    justify-content: space-evenly;
-   
-
 }
 .checkout-container{
   margin-top: 40px;
@@ -263,7 +261,7 @@ input{
 }
   /*  media query for the mobile device */
 /*  howme page design */
-@media(min-width: 400px ) and (max-width: 600px){
+@media (max-width: 600px){
   .nav-item{
     padding: 10px 5px;
     font-size: 20px;
@@ -309,7 +307,7 @@ input{
 
 /* cart pages show   */
 
-@media(min-width: 400px) and (max-width: 600px){
+@media(max-width: 600px){
  .cart-page-border{
   padding: 10px 5px;
  }
@@ -345,7 +343,7 @@ gap: 5px;
 }
 }
 /*  form media query  */
-@media(min-width: 400px) and (max-width: 600px){
+@media(max-width: 600px){
   .cart-page-border{
     padding: 10px 5px;
   }

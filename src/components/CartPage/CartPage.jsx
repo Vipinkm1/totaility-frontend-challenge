@@ -47,8 +47,6 @@ const handleDecrement = (index) => {
 const handleRemove = (index) => {
   removeFromCart(index);
 };
-
-
 //  redirect the page in the checkout process
 const handleCheckoutProcess = () => {
   navigate('/checkout')
