@@ -12,9 +12,6 @@ import Img10 from '../../assets/Image10.jpg'
 import Img11 from '../../assets/Image11.jpg'
 import { useCart } from '../CartContext'
 
-
-
-
 const Pages = () => {
   const [seletedPrice, setSelectedPrice] = useState('')
   const [selectedLocation, setSelectedLocation] = useState('')

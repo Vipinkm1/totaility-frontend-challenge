@@ -2,14 +2,16 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
 import Home from './components/Home/Home'
 import CartPage from './components/CartPage/CartPage'
-import { CartProvider } from './components/CartContext'
+
 import CheckOut from './components/Pages/CheckOut'
+import { CartProvider } from './components/CartContext'
+
 
 
 
 function App() {
   return (
-    <div>
+    <>
  <CartProvider>
      <BrowserRouter>
       <Routes>
@@ -20,7 +22,7 @@ function App() {
      </BrowserRouter>
      </CartProvider>
 
-    </div>
+    </>
   )
 }
 
