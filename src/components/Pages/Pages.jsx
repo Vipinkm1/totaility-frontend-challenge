@@ -13,15 +13,12 @@ import Img11 from '../../assets/Image11.jpg'
 import { useCart } from '../CartContext'
 
 
-//  check the main componets are show in the container
+
 
 const Pages = () => {
   const [seletedPrice, setSelectedPrice] = useState('')
   const [selectedLocation, setSelectedLocation] = useState('')
   const [selectedBedrooms, setSelectedBedrooms] = useState('')
-
-
-  
   const {addToCart} = useCart()
 
   //  map function propertyList
@@ -47,7 +44,6 @@ const Pages = () => {
     if (seletedPrice === '$6500-$100000') return priceNumber >= 6500 && priceNumber <= 100000;
     return true;
   };
-
 //  filter with the bedrooms
   const withinBedroomRange = (bedrooms) => {
     const bedroomNumber = parseInt(bedrooms);
@@ -62,7 +58,6 @@ const Pages = () => {
     const matchesBedrooms = selectedBedrooms ? withinBedroomRange(property.Bedrooms) : true;
     return matchesPrice && matchesLocation && matchesBedrooms;
   })
-
   return (
     <>
       <div className='filter'>
